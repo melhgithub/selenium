@@ -1,0 +1,11 @@
+<extentreports>
+  <configuration>
+    <reportName>Performance Test Report</reportName>
+    <theme>dark</theme>
+    <encoding>utf-8</encoding>
+    <protocol>https</protocol>
+    <enableDashboard>true</enableDashboard>
+    <testingSectionVisible>true</testingSectionVisible>
+    <chartVisibilityOnOpen>true</chartVisibilityOnOpen>
+  </configuration>
+</extentreports>
