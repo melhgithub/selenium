@@ -13,10 +13,9 @@ import java.io.File;
 
 public class jMeter_Steps {
 
-	@Given("I have prepared a JMeter test")
+	@Given("Prepared a JMeter test")
 	public void prepareJMeterTest() throws Exception {
 	    try {
-	        // Update the path to the correct location of jmeter.properties
 	        String jmeterPropertiesPath = "C:\\apache-jmeter-5.6.3\\bin\\jmeter.properties";
 	        JMeterUtils.loadJMeterProperties(jmeterPropertiesPath);
 	        JMeterUtils.setJMeterHome("C:\\apache-jmeter-5.6.3");
@@ -28,7 +27,7 @@ public class jMeter_Steps {
 	}
 
 
-    @When("I execute the JMeter test")
+    @When("Execute the JMeter test")
     public void executeJMeterTest() throws Exception {
         StandardJMeterEngine jmeter = new StandardJMeterEngine();
         try {
@@ -47,7 +46,7 @@ public class jMeter_Steps {
 
 
 
-    @Then("I should get the performance results")
+    @Then("Get the performance results")
     public void verifyResults() {
         System.out.println("Test completed. Results can be checked.");
     }
